@@ -1,12 +1,13 @@
-from utils.load_images import *
-from detectors.example_class import *
+from utils.utils import *
+from detectors.fast_saliency import FastSaliency
+from detectors_upload.lcm_Ljh import lcm
 
 if __name__ == '__main__':
-    img = load_image('E:/NutFiles/ProgramCache/GoogleDriveFiles/AerialDetection (1)/data/dota/test/images/P0006.png')
+    img = load_image('./data/1.bmp')
 
-    detector = example_class(1, 2)
+    detector = lcm(0, 0)
     detector.process(img)
-    detector.show_result()
+    show_image(detector.result)
 
     plt.show()
 

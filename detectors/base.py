@@ -42,7 +42,3 @@ class BaseDetector(object):
         '''
         pass
 
-    def show_result(self):
-        plt.figure()
-        plt.imshow(self.result, cmap='gray')
-
