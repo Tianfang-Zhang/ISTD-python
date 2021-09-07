@@ -112,3 +112,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+
+# define ignore file
+/data/sirst/
+/data/MDFA/

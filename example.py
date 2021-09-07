@@ -1,4 +1,4 @@
-from utils.utils import *
+from utils.images import *
 from detectors.fast_saliency import FastSaliency
 from detectors_upload.lcm_Ljh import lcm
 
