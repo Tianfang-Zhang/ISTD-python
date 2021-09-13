@@ -35,7 +35,6 @@ class BaseEvaluator(object):
         '''
         pass
 
-    @abstractmethod
     def get_all(self):
         '''
         Get metric for all images.

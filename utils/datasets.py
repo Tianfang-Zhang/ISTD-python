@@ -2,7 +2,7 @@ import os.path as osp
 from utils.images import load_image
 
 
-class MDFA():
+class MDFA(object):
     def __init__(self, base_dir='../data/MDFA/', mode='test'):
         assert mode in ['trainval', 'test']
         if mode == 'trainval':
