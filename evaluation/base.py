@@ -10,7 +10,7 @@ class BaseEvaluator(object):
         self.reset()
 
     @abstractmethod
-    def update(self, preds, labels):
+    def update(self, preds=None, labels=None, in_img=None):
         '''
         Update parameters of this evaluator.
 
@@ -20,6 +20,8 @@ class BaseEvaluator(object):
                 The saliency map or detection result of algorithms.
             labels : numpy array
                 The labeled image.
+            in_img : numpy array
+                The original image. Required when Evaluating some metrics such BSF and SCR Gain.
         '''
         pass
 
