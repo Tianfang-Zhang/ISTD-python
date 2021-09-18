@@ -29,6 +29,7 @@ class ROC(BaseEvaluator):
     def reset(self):
         self.far = np.array([])  # 此处遗留一点小问题：reset没有发挥用处
         self.tpr = np.array([])
+        self.AUC = 0
 
     def get(self):
         self.avefar = np.mean(self.far, axis=0)
@@ -42,3 +43,8 @@ class ROC(BaseEvaluator):
         plt.ylabel("TPR")
         plt.title("ROC")
         plt.plot(self.avefar, self.avetpr)
+        
+    def get_AUC(self):
+        for i in range(len(self.avetpr)-1):
+            self.AUC = self.AUC + 0.5 * (self.avetpr[i+1] + self.avetpr[i]) * (self.avefar[i] - self.avefar[i+1])
+        return self.AUC
