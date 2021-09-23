@@ -16,11 +16,11 @@ class BaseEvaluator(object):
 
             Parameters
             ----------
-            preds : numpy array
+            preds : ndarray
                 The saliency map or detection result of algorithms.
-            labels : numpy array
+            labels : ndarray
                 The labeled image.
-            in_img : numpy array
+            in_img : ndarray
                 The original image. Required when Evaluating some metrics such BSF and SCR Gain.
         '''
         pass
