@@ -20,5 +20,5 @@ class BSF(BaseEvaluator):
         return self.bsfouts[-1]
 
     def get_all(self):
-        return self.bsfouts
+        return np.mean(self.bsfouts)
 
