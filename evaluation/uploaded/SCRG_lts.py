@@ -29,4 +29,4 @@ class SCRG(BaseEvaluator):
         return self.scrgouts[-1]
 
     def get_all(self):
-        return self.scrgouts
+        return np.mean(self.scrgouts)
