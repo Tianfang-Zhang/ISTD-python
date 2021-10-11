@@ -17,15 +17,15 @@ class IPI1(BaseDetector):
         D = []
         for i in range(0, m - self.dh + 1, self.ystep):
             for j in range(0, n - self.dw + 1, self.xstep):
-                D.append(image[i:i + self.dh, j:j + self.dw].flatten('F'))  # 'F'按列展开
+                D.append(image[i:i + self.dh, j:j + self.dw].flatten('F')) 
         D_array = np.array(D).T
-        D_normalized = self.mat2gray(D_array)  # 块图像归一化
+        D_normalized = self.mat2gray(D_array)  
 
-        # 用APG算法从D中分解出目标图像E1和背景图像A1
+        
         Lambda = 1 / np.sqrt(max(m, n))
         A1, E1 = self.APG_IR(D_normalized, Lambda)
 
-        # 块图像重构目标图像E_hat
+       
         AA = np.zeros((m, n, 100))
         EE = np.zeros((m, n, 100))
 
@@ -37,7 +37,7 @@ class IPI1(BaseDetector):
         for i in range(0, m - self.dh + 1, self.ystep):
             for j in range(0, n - self.dw + 1, self.xstep):
                 temp1 = E1[:, index].reshape((self.dw, self.dh)).T
-                C[i:i + self.dh, j:j + self.dw] += 1  # 记录每个像素点重叠的次数（被滑动窗口遍历的次数）
+                C[i:i + self.dh, j:j + self.dw] += 1  
                 index += 1
                 for ii in range(i, i + self.dh):
                     for jj in range(j, j + self.dw):
@@ -120,10 +120,7 @@ class IPI1(BaseDetector):
             X_k_E = X_kp1_E
             numIter += 1
 
-            ########################################################################
-            # The iteration process can be finished if the rank of A keeps the same
-            # many times
-
+           
             if pre_rank == rankA:
                 NOChange_counter += 1
                 if NOChange_counter > 10 and np.abs(cardE - pre_cardE) < 20:
@@ -132,20 +129,10 @@ class IPI1(BaseDetector):
                 NOChange_counter = 0
                 pre_cardE = cardE
             pre_rank = rankA
-            ########################################################################
-            # In practice, the APG algorithm, sometimes, cannot get a strictly
-            # low-rank matrix A_hat after iteration process. Many  singular valus of
-            # the obtained matrix A_hat, however, are extremely small. This can be
-            # considered to be low-rank to a certain extent. Experimental results
-            # show that the final recoverd backgournd image and target image are
-            # good. Alternatively, we can make the rank of matrix A_hat lower using
-            # the following truncation. This trick can make the APG algorithm faster
-            # and the performance of our algorithm is still satisfied. Here we set
-            # the truncated threshold as 0.3, while it can be adaptively set based
-            # on your actual scenarios.
+           
             if rankA > 0.3 * min(m, n):
                 converged = 1
-            ########################################################################
+           
             if DISPLAY and numIter % DISPLAY_EVERY == 0:
                 print('Iteration ', numIter, '  rank(A) ', rankA, ' ||E||_0 ', cardE)
 
