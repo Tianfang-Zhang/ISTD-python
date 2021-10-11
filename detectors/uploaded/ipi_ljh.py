@@ -67,12 +67,12 @@ class IPI1(BaseDetector):
         m, n = D.shape
         t_k = 1
         t_km1 = 1
-        tau_0 = 2  # square of Lipschitz constant for the RPCA problem
+        tau_0 = 2 
 
         X_km1_A = np.zeros(D.shape)
-        X_km1_E = np.zeros(D.shape)  # X^{k-1} = (A^{k-1},E^{k-1})
+        X_km1_E = np.zeros(D.shape)  
         X_k_A = np.zeros(D.shape)
-        X_k_E = np.zeros(D.shape)  # X^{k} = (A^{k},E^{k})
+        X_k_E = np.zeros(D.shape) 
 
         U, s, V = np.linalg.svd(D, full_matrices=False)
         mu_k = s[1]
