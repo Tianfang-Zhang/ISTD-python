@@ -1,4 +1,4 @@
-from .base import *
+from detectors.base import *
 
 
 class FastSaliency(BaseDetector):
