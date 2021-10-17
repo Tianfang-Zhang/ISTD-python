@@ -4,7 +4,7 @@ from utils.images import *
 img = load_image('../data/1.bmp')
 
 
-alg = IPI()
+alg = MPCM()
 alg.process(img)
 
 show_image(img)

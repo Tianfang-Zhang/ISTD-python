@@ -60,8 +60,3 @@ class LCM(BaseDetector):
 
             masks_all.append(masks)
         return masks_all
-
-
-
-
-
