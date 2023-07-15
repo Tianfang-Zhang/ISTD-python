@@ -10,9 +10,8 @@ class PSTNN(BaseDetector):
     Python implement of PSTNN method.
 
         Reference:
-        ---------
-        > Gao C, Meng D, Yang Y, et al. Infrared patch-image model for small target detection in a single image[J].
-        > IEEE transactions on image processing, 2013, 22(12): 4996-5009.
+        Zhang, L.; Peng, Z. Infrared Small Target Detection Based on Partial Sum of the Tensor Nuclear Norm.
+        Remote Sens. 2019, 11, 382.
     '''
 
     def __init__(self, patchSize=40, slideStep=40, lambdaL=0.7):
@@ -23,23 +22,21 @@ class PSTNN(BaseDetector):
 
     def process(self, img):
         img = img.astype(np.float64)
+
         tenD = self.gen_patch_ten(img, self.patchSize, self.slideStep)
         n1, n2, n3 = tenD.shape
+
         lambda1, lambda2 = self.structure_tensor_lambda(img, 3)
         corner_strength = (lambda1 * lambda2) / (lambda1 + lambda2
                                                  + np.finfo(np.float64).eps)  # avoid divide 0
-        # step3: obtain final weight map
-        # lambda_max is the maximum of lambda1 and lambda2
         lambda_max = np.array((lambda1, lambda2))
         lambda_max = lambda_max.max(axis=0)
-        # get prior weight and normalize it
+
         prior_weight = lambda_max * corner_strength
         _range = np.amax(prior_weight) - np.amin(prior_weight)
         prior_weight = (prior_weight - np.amin(prior_weight)) / _range
-        ## step4: construct patch tensor of weight map
         tenW = self.gen_patch_ten(prior_weight, self.patchSize, self.slideStep)
 
-        ## step 5: The proposed model
         _lambda = self.lambdaL / math.sqrt(max(n1, n2) * n3)
         tenB, tenT = self.trpca_pstnn(tenD, _lambda, tenW)
 
