@@ -5,3 +5,4 @@ from .ipi import IPI
 from .tophat import Tophat
 from .maxmedian import MaxMedian
 from .mpcm import MPCM
+from .pstnn import PSTNN

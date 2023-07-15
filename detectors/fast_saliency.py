@@ -14,6 +14,7 @@ class FastSaliency(BaseDetector):
         super(FastSaliency, self).__init__()
 
     def process(self, in_img):
+        in_img = in_img/255
         filter = np.array([[-4, -1, 0, -1, -4],
                            [-1, 2, 3, 2, -1],
                            [0, 3, 4, 3, 0],
