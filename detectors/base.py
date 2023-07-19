@@ -11,7 +11,19 @@ class BaseDetector(object):
     '''
 
     def __init__(self):
-        self._result = np.array([])
+        '''
+        Init function.
+
+            Notes
+            ------
+            1. self._result is Python dict, which key 'rst' is required.
+            2. dict value of each key must be Numpy Array.
+            3. you can customize your unique output, such as other coefficient matrix.
+            ------
+        '''
+        self._result = {'target': np.array([]),
+                        'background': np.array([]),
+                        'coefficient': np.array([])}
 
     @property
     def result(self):

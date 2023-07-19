@@ -47,7 +47,7 @@ class MPCM(BaseDetector):
 
         rst_imgs = np.array(rst_imgs)
         rst = np.max(rst_imgs, axis=0)
-        self._result = rst * (rst > 0)
+        self._result['target'] = rst * (rst > 0)
 
     def construct_filters(self, r_in):
         d_in = 2 * r_in + 1

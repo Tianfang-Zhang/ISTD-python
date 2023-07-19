@@ -1,7 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ce142a2-ae3e-47e5-8e68-2d117624570e" name="Default Changelist" comment="" />
+    <list default="true" id="9ce142a2-ae3e-47e5-8e68-2d117624570e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ISTD-python.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ISTD-python.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/fast_saliency.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/fast_saliency.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/hbmlcm.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/hbmlcm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/ipi.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/ipi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/lcm.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/lcm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/maxmedian.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/maxmedian.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/mpcm.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/mpcm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/pstnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/pstnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/t_detector.py" beforeDir="false" afterPath="$PROJECT_DIR$/t_detector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/tophat.py" beforeDir="false" afterPath="$PROJECT_DIR$/detectors/tophat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/FastSaliency_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/HBLCM_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/HB_MLCM_Ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/IPI_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/LCM_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/WIPI_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/fast_saliency_Ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/ipi_ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/detectors/uploaded/lcm_Ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/BSF_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/ROC_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/SCRG_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/bsf_ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/example_lts.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/examplebsf_ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/examplerocauc_;jh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/examplescrg_ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/rocauc_ljh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/evaluation/uploaded/scrg_ljh.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,25 +57,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1xJIqlaXneQsP3x27v4Jg354pUk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../AerialDetection/Ai_Tianchi_Surface_Building" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "settings.editor.selected.configurable": "inlay.hints"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="E:\NutFiles\ProgramCache\InfraredSmallTargets\ISTD-python\evaluation\uploaded" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.t_detector">
-    <configuration name="__init__" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.evaluation">
+    <configuration name="evaluation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ISTD-python" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -43,11 +87,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data/__init__.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/evaluation.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -131,7 +175,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/detectors/t_detector.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/t_detector.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -142,14 +186,15 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.evaluation" />
         <item itemvalue="Python.t_detector" />
+        <item itemvalue="Python.example" />
         <item itemvalue="Python.mpcm" />
         <item itemvalue="Python.lcm" />
-        <item itemvalue="Python.example" />
-        <item itemvalue="Python.__init__" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -163,63 +208,16 @@
     </task>
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1631472334464">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1631472334464" />
-    <state width="1515" height="208" key="GridCell.Tab.0.bottom" timestamp="1634322373970">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="385" key="GridCell.Tab.0.bottom/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129292" />
-    <state width="2539" height="397" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634308750575" />
-    <state width="1515" height="208" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634322373970" />
-    <state width="1515" height="208" key="GridCell.Tab.0.center" timestamp="1634322373970">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="385" key="GridCell.Tab.0.center/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129292" />
-    <state width="2539" height="397" key="GridCell.Tab.0.center/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634308750575" />
-    <state width="1515" height="208" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1634322373970" />
-    <state width="1515" height="208" key="GridCell.Tab.0.left" timestamp="1634322373970">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="385" key="GridCell.Tab.0.left/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129292" />
-    <state width="2539" height="397" key="GridCell.Tab.0.left/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634308750575" />
-    <state width="1515" height="208" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1634322373970" />
-    <state width="1515" height="208" key="GridCell.Tab.0.right" timestamp="1634322373970">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="385" key="GridCell.Tab.0.right/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129292" />
-    <state width="2539" height="397" key="GridCell.Tab.0.right/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634308750575" />
-    <state width="1515" height="208" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1634322373970" />
-    <state width="1515" height="187" key="GridCell.Tab.1.bottom" timestamp="1634322348916">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="348" key="GridCell.Tab.1.bottom/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129290" />
-    <state width="2539" height="359" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634227233078" />
-    <state width="1515" height="187" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1634322348916" />
-    <state width="1515" height="187" key="GridCell.Tab.1.center" timestamp="1634322348915">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="348" key="GridCell.Tab.1.center/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129290" />
-    <state width="2539" height="359" key="GridCell.Tab.1.center/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634227233078" />
-    <state width="1515" height="187" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1634322348915" />
-    <state width="1515" height="187" key="GridCell.Tab.1.left" timestamp="1634322348915">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="348" key="GridCell.Tab.1.left/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129290" />
-    <state width="2539" height="359" key="GridCell.Tab.1.left/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634227233078" />
-    <state width="1515" height="187" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1634322348915" />
-    <state width="1515" height="187" key="GridCell.Tab.1.right" timestamp="1634322348915">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1969" height="348" key="GridCell.Tab.1.right/0.0.1536.824/-2560.-632.2560.1400@-2560.-632.2560.1400" timestamp="1632414129290" />
-    <state width="2539" height="359" key="GridCell.Tab.1.right/0.0.1536.824/1920.-938.2560.1400@1920.-938.2560.1400" timestamp="1634227233078" />
-    <state width="1515" height="187" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1634322348915" />
-    <state x="270" y="54" key="SettingsEditor" timestamp="1630067177700">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1630067177700" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

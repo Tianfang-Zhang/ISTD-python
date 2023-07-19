@@ -51,7 +51,7 @@ class PSTNN(BaseDetector):
         E = np.around(normalization(tarImg) * maxv).astype(np.uint8)
         A = np.around(normalization(backImg) * maxv).astype(np.uint8)
 
-        self._result = E
+        self._result['target'] = E
 
     def gen_patch_ten(self, img, patchSize, slideStep):
         """Construct patch tensor of original image"""
@@ -187,7 +187,7 @@ class PSTNN(BaseDetector):
         rho = 1.05
         mu = 2e-3
         max_mu = 1e10
-        DEBUG = 1
+        DEBUG = 0
         N = rankN(_X, 0.1)  # To get the preserved target rank
         constant_c = 1. + N
 

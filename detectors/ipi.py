@@ -24,7 +24,7 @@ class IPI(BaseDetector):
 
         # rstB = self.patch2image(B, self.length, self.step, (m, n))
         rstT = self.patch2image(T, self.length, self.step, (m, n))
-        self._result = rstT * (rstT > 0)
+        self._result['target'] = rstT * (rstT > 0)
 
     def image2patch(self, in_img, length, step):
         m, n = in_img.shape

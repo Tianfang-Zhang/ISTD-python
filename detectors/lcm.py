@@ -41,7 +41,7 @@ class LCM(BaseDetector):
                     C[r_i] = np.min(L ** 2 / means)
                 rst[i, j] = np.max(C)
 
-        self._result = rst
+        self._result['target'] = rst
 
     def make_mask(self):
         masks_all = []

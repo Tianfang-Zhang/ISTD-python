@@ -40,7 +40,7 @@ class HBMLCM(BaseDetector):
                     mb = (np.sum(patch_ex) - np.sum(patch_in)) / ((2*ex_r+1) ** 2 - (2*r+1) ** 2)
                     dst[ri] = np.abs(mt-mb)
                 rst[i, j] = (np.max(dst) - np.min(dst)) ** 2
-        self._result = rst
+        self._result['target'] = rst
 
     def high_boost(self, in_img):
         d = self.high_boost_d

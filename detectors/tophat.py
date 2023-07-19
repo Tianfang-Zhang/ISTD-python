@@ -20,4 +20,4 @@ class Tophat(BaseDetector):
         d = 2 * self.radius + 1
         kernel = cv2.getStructuringElement(self.morph, (d, d))
         tophat_img = cv2.morphologyEx(in_img, cv2.MORPH_TOPHAT, kernel)
-        self._result = tophat_img
+        self._result['target'] = tophat_img

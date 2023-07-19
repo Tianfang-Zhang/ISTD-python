@@ -27,5 +27,5 @@ class MaxMedian(BaseDetector):
                 med_img[i, j] = np.max(z)
 
         rst = in_img - med_img
-        self._result = rst * (rst > 0)
+        self._result['target'] = rst * (rst > 0)
 

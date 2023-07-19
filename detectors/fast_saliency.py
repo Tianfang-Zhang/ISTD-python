@@ -24,6 +24,6 @@ class FastSaliency(BaseDetector):
         rst = rst ** 2
 
         rst = cv2.GaussianBlur(rst, [5, 5], 1.5)
-        self._result = rst
+        self._result['target'] = rst
 
 

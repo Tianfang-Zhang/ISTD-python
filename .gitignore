@@ -117,3 +117,6 @@ dmypy.json
 # define ignore file
 /data/sirst/
 /data/MDFA/
+
+#/result/MDFA/*
+#/result/SIRST/*
